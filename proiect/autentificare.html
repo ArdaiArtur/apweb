@@ -3,42 +3,47 @@
 </head>
 <body>
     <link rel="stylesheet" href="autentificare.css">
+    <link rel="javcode" href="App.js">
     <div id="continut">
 <div id="card"> 
     <div id="title"><h1>Create account</h1> <hr> </div>
-    <form>
+    <form >
         
-        <label for="Nume">Name:</label>  
-        <input type="text" id="Nume" name="Nume"><br>
+        <label for="User-Name">User Name:</label>  
+        <input type="text" id="User-Name" name="User-Name" placeholder="Jhony" required><br>
         <br>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <label for="Parola">Password:</label>
-        <input type="password" id="Parola" name="Parola"> <br>
+        <input type="password" id="password" name="password" placeholder="***********"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> <br>
         <br>
 
         <label for="ConfirmParola">Confirm Password:</label>
-        <input type="password" id="ConfirmParola" name="ConfirmParola"> <br>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="***********"  
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required> <br>
         <br>
 
         <label for="EMail">E-mail:</label>
-        <input type="text" id="EMail" name="EMail"><br>
+        <input type="email" id="EMail" name="EMail"  required><br>
         <br>
         
-        <label for="Sex">Sex:</label>
-        <input type="radio" id="Barbat" name="Barbat">
+        <label for="Sex" >Sex:</label>
+        <input type="radio" id="Barbat" name="Check" required>
         <label for="Barbat">Barbat</label>        
 
-        <input type="radio" id="Femeie" name="Femeie">
+        <input type="radio" id="Femeie" name="Check" required>
         <label for="Femeie">Femeie</label> <br>
         <br>
 
         <label for="Varsta">Varsta:</label>
-        <input type="date" id="Varsta" name="Varsta"><br>
+        <input type="text" id="Varsta" name="Varsta" required><br>
         <br>
-      </form> <hr>
-      <h5><a href="login.html">Already have an account? Login</a></h5>
-      <button id="button-create-account" ref="">Create account</button>
-    
+        <hr><h5><a href="login.html">Already have an account? Login</a></h5>
+      <input type="submit"></form> 
+      
+      
+      
+      <link rel="javcode" href="App.js">
    </div>
 </div>
 </body>

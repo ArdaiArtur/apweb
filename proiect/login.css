@@ -15,10 +15,10 @@
     align-items:center;
 
     position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 10;
+    bottom: 10;
+    left: 10;
+    right: 10;
     background-color:  transparent;
     color:black;
     background-color: rgb(221, 215, 215);
