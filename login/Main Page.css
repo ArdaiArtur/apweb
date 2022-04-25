@@ -1,0 +1,111 @@
+#header {
+    margin:5px 5px 5px 5px;
+    padding-left:10px;
+    background-color:rgb(214, 254, 197);
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    color:#7a7d69;
+    position: sticky;
+    
+}
+#Autentificare
+{
+    text-align: right;
+}
+#titlu {
+   
+    text-align: center;
+}
+
+#header h5{
+	margin:0;
+	padding:10px;
+	/*background-color:pink;*/
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	color:#7a7d69;
+ }
+#meniu,
+ #continut
+{
+	float:left;
+    height: 84vh; /*incape fix pe pagina, restul de 15vh fiind header + 1vh fiind gap-ul dintre cele 2 sectoare*/
+    padding-top: 10px;
+    overflow-y: scroll; /*scroll pentru ocazia in care utilizatorul creeaza mai multe fisiere/incarca imagini 
+    care ar face ca continutul in plus sa iasa din div*/
+ }
+ #continut
+ {padding: 10px;
+	border-left:1px solid rgb(6, 6, 163);
+    border:2px #3498db solid;
+    background-color: rgb(233, 237, 255);
+    width:82.7%;
+ }
+ body
+ {
+     background-color: rgb(232, 182, 181);
+ }
+ 
+ #meniu{
+	width:17%;
+    background-color: aliceblue;
+    position: sticky;
+ }
+ .button {
+    background-color: #4CAF50; /* Green */
+    border:100px;
+    width: 200px;
+    color: white;
+    padding: 15px 15px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .btn {
+    cursor: pointer; 
+    background-color: transparent;
+    height: 50px;
+    width: 200px;
+    color: #3498db;
+    font-size: 1.5em;
+    border: transparent;  
+}
+/* The actual popup 
+Deoarece am pus cu spatiu pop-up si hidden si flex-container-center la classname
+Se putea sa punem toate elementele in aceeasi clasa dar
+sunt impartite deoarece in JS file fiecare actiune activeaza unul din cele 3 clase */
+.pop-up{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:  transparent;
+    color:black;
+}
+.card{
+    align-items: center;
+    background-color: #7a7d69;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 5px;
+}
+.flex-container-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.hidden{
+    display: none;
+}
