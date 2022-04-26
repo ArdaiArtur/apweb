@@ -1,3 +1,6 @@
+<?php
+   session_start();
+?>
 <!DOCTYPE html>
 <head>
    
@@ -7,16 +10,9 @@
     <link rel="stylesheet" href="Main Page.css">
 </head>
 <body>
-    
-    <div id="header"> 
-        <div id="Autentificare">  
-        <h5> <a href="autentificare.html">Autentificare</a> | <a href="login.html">Login</a>  
-        </h5> 
-        </div>  
-  
-     <div id="titlu"> <h1>File Share</h1></div>
-     </div>
-      
+    <?php
+    include_once 'header.php';
+    ?>
 <div id="meniu">
     
     <button  name="Upload picture" class="button" style="cursor: pointer" >
