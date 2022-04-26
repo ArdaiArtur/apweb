@@ -5,14 +5,13 @@
     border-top-left-radius:8px;
     border-top-right-radius:8px;
     color:#7a7d69;
-    position: sticky;
-    
+    position: sticky;  
 }
 #Autentificare
 {
     text-align: right;
 }
-#titlu {
+#title {
    
     text-align: center;
 }
