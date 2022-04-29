@@ -7,40 +7,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="Main Page.css">
+    <link rel="stylesheet" href="Main Page.css"/>
+    <link rel="stylesheet" href="css/styles.css"  >
 </head>
 <body>
-    <?php
-    include_once 'header.php';
-    ?>
-<div id="meniu">
-    
-    <button  name="Upload picture" class="button" style="cursor: pointer" >
-        <i class="fa fa-arrow-circle-up" aria-hidden="true" onclick=""></i>Upload picture 
-    </button>  
-    <br>
-    <p>file1<i class="fa fa-folder-o" aria-hidden="true"></i></p>
-    <p>file2<i class="fa fa-folder-o" aria-hidden="true"></i></p>
-    <p>file3<i class="fa fa-folder-o" aria-hidden="true"></i></p>
-    <button onclick="TogglePopup()"  class="btn" > 
-        <i class="fa fa-plus" aria-hidden="true"></i> Create folder
-    </button>
-</div>
-<div class="pop-up flex-container-center hidden">
-    <div class="card">
-        <h2>Name Folder</h2>
-        <label class="input">
-          <input class="input__field" type="text" placeholder="Numele of the folder" />
-        </label>
-        <div class="button-group">
-          <button onclick="">Create Folder</button>
-          <button onclick="TogglePopup()" type="Cancel">Cancel</button>
-        </div> 
-    </div>
-</div>
-<div id="continut"> Content
-</div>
-<div class="Footer">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom  static-top ">
+            <div class="container px-5">
+                <a class="navbar-brand mr-1" >File upload</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                   <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="start.php">Sing out</a></li>
+                       <!-- <li class="nav-item"><a class="nav-link" href="login.php">Log In</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class=" bg-black" id="sidebar-wrapper">
+               
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-dark  p-3" href="#!">Dashboard</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3" href="#!">Shortcuts</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3" href="#!">Overview</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3" href="#!">Events</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3" href="#!">Profile</a>
+                    <a class="list-group-item list-group-item-action list-group-item-dark p-3" href="#!">Status</a>
+                </div>
+            </div>
+          
+             <!--full pagine dupa asta srie ce vrei -->
+                 <div id="page-content-wrapper"  style=" background: linear-gradient(0deg, #0CBAA6 0%, #2779e2 100%);  ">
+                <!-- ceva text -->
+                <div class="container-fluid">
+                    <h1 class="mt-4">ceva text scris Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati facilis modi, blanditiis dolorem culpa quidem voluptates animi maiores totam dolores, asperiores est iure nihil eos assumenda id fugit aperiam ut.</h1>
+                   
+           
+                </div>
+            </div>
+        </div>
+
 </div>
 <script src="App.js"> </script>
 </body>
