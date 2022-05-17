@@ -1,4 +1,5 @@
 <?php
+session_start();
 if(isset($_POST["submit"])){
   
     $username=$_POST["uid"];
@@ -18,3 +19,4 @@ else{
     header("location: ../login.php");
     exit();
 }
+?>

@@ -1,6 +1,6 @@
 <?php
 function emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat){
-   $result;
+   $result=false;
    if(empty($name) || empty($email) || empty($username) || empty($pwd) || empty($pwdRepeat)){
     $result=true;
    } 
@@ -10,7 +10,7 @@ function emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat){
    return $result;
 }
 function InvalidUid($username){
-    $result;
+    $result=false;
     if(preg_match ("^[a-zA-Z0-9]*$", $username)){
      $result=true;
     } 
@@ -20,7 +20,7 @@ function InvalidUid($username){
     return $result;
  } 
  function InvalidEmail($email){
-    $result;
+    $result=false;
     if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
      $result=true;
     } 
@@ -30,7 +30,7 @@ function InvalidUid($username){
     return $result;
  }
  function pwdMatch($pwd,$pwdRepeat){
-    $result;
+    $result=false;
     if($pwd !== $pwdRepeat){
      $result=true;
     } 
@@ -78,7 +78,7 @@ function InvalidUid($username){
        exit();
 }
 function emptyInputLogin($username,$pwd){
-    $result;
+    $result=false;
     if(empty($username) || empty($pwd)){
      $result=true;
     } 
@@ -105,7 +105,12 @@ function emptyInputLogin($username,$pwd){
       session_start();
       $_SESSION["userid"] = $uidExists["userId"];
       $_SESSION["useruid"] = $uidExists["usersUid"];
+      $_SESSION["UserName"] = $uidExists["usersName"];
+      $_SESSION["foldername"]=$uidExists["usersUid"];
+      $_SESSION["email"]=$uidExists["usersEmail"];
       header("location: ../Mainpage.php");
+      
       exit();
     }
  }
+ ?>

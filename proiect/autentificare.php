@@ -74,7 +74,8 @@
       <?php
        if(isset($_GET["error"])){
         if($_GET["error"]=="EmptyInput"){
-            echo "<p>Fill in all the fields!</p>";
+           echo'<script>alert( "Fill in all the fields!")</script>';
+         
         }
         else if ($_GET["error"]=="InvalidUid") {
             echo "<p>Choose a proper username!</p>";

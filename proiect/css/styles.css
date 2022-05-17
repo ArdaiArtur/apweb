@@ -361,6 +361,15 @@ input
   box-sizing: border-box;
   box-shadow: 0px 0px 2px #ccc;
 }
+#Cancel
+{
+  border:none;
+  background-color: blue;
+  color:white;
+  font-size:1em;
+  box-shadow: 0px 0px 3px #777;
+  padding:10px 0px;
+}
 #submit {
   border:none;
   background-color: blue;
@@ -932,13 +941,17 @@ progress {
   min-height: 93.5vh;
   margin-left: 0rem;
   transition: margin 0.25s ease-out;
+  position: -webkit-sticky;
+  position: sticky;
+  background-attachment: scroll;
 }
 #page-content-wrapper {
   min-width: 0;
   width: 100%;
 }
 #page-content-wrapper {
-  min-width: 93.50vw;
+  
+  min-width: 80%;
 }
 @media (min-width: 576px) {
   .col-sm {
@@ -3828,7 +3841,7 @@ textarea.form-control-lg {
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #ee0979;
+  background-color: #919191;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
@@ -6787,8 +6800,12 @@ textarea.form-control-lg {
 
 .d-flex {
   display: flex !important;
+  
 }
-
+.d-flexx {
+  display: flex !important;
+  overflow-x: scroll;
+}
 .d-inline-flex {
   display: inline-flex !important;
 }
@@ -7092,6 +7109,7 @@ textarea.form-control-lg {
 
 .flex-wrap {
   flex-wrap: wrap !important;
+  grid-gap: 10px; 
 }
 
 .flex-nowrap {

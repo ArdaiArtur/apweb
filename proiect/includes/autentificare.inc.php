@@ -1,4 +1,5 @@
 <?php
+session_start();
 if(isset($_POST["submit"]))
 {
   $name=$_POST["Name"];
@@ -9,6 +10,19 @@ if(isset($_POST["submit"]))
 
   require_once 'dbh.inc.php';
   require_once 'functions.inc.php';
+  $curdir='C:\xampp\htdocs\apweb-1\proiect\uploads/';
+  $foldername=$_POST["UserName"];
+  
+  //$_SESSION["userfolder"] = $foldername;
+  
+  
+  if(mkdir($curdir.$foldername, 0777))
+  {
+    echo'<script>alert( "cont creat /ptfolder/")</script>';
+
+  }
+  else
+  { echo'<script>alert( "no cont /ptfolder/")</script>';}
 
   if(emptyInputSignup($name,$email,$username,$pwd,$pwdRepeat)!==false) {
     header("location: ../autentificare.php?error=EmptyInput");
@@ -32,12 +46,11 @@ if(isset($_POST["submit"]))
   }
 
   createUser($conn,$name,$email,$username,$pwd);
-  /*$curdir=".C:/xampp/htdocs/app user folder";
-  $foldername=$_POST["UserName"];
-  mkdir("testing", 0777);*/
+  
  
 }
 else{
     header("location: ../autentificare.php");
     exit();
 }
+?>
