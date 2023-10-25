@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+    <link rel="stylesheet" href="autentificare.css">
+    <div id="continut">
+<div id="card"> 
+    <div id="title"><h1>Create account</h1> <hr> </div>
+    <form >
+        
+        <label for="Nume">Name:</label>  
+        <input type="text" id="Nume" name="Nume" placeholder="Jhony"><br>
+        <br>
+
+        <label for="Parola">Password:</label>
+        <input type="password" id="Parola" name="Parola"placeholder="***********"> <br>
+        <br>
+
+        <label for="ConfirmParola">Confirm Password:</label>
+        <input type="password" id="ConfirmParola" name="ConfirmParola" placeholder="***********"> <br>
+        <br>
+
+        <label for="EMail">E-mail:</label>
+        <input type="text" id="EMail" name="EMail" placeholder="exemplu@gmail.com"><br>
+        <br>
+        
+        <label for="Sex">Sex:</label>
+        <input type="radio" id="Barbat" name="Barbat">
+        <label for="Barbat">Barbat</label>        
+
+        <input type="radio" id="Femeie" name="Barbat">
+        <label for="Femeie">Femeie</label> <br>
+        <br>
+
+        <label for="Varsta">Varsta:</label>
+        <input type="date" id="Varsta" name="Varsta" min="01-01-2004" max="31-12-2022"><br>
+        <br>
+        <hr><h5><a href="login.html">Already have an account? Login</a></h5>
+      <input type="submit"></form> 
+      
+      
+      
+    
+   </div>
+</div>
+</body>
+</html>
